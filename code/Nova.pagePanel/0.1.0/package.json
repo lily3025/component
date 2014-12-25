@@ -1,0 +1,13 @@
+{
+    "name": "PagePanel",
+    "version": "0.1.0",
+    "keywords" : ["nova"],
+    "repository": {
+        "url": "https://github.com/75team/novaUI",
+        "type": "git"
+    },
+    "homepage": "http://75team.github.io/novaUI/",
+    "maintainers": ["snadn <yangmao@360.cn>"],
+    "description": "全屏浮层控件",
+    "output": "pagePanel.js"
+}

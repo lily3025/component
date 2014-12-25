@@ -1,0 +1,13 @@
+{
+    "name": "moment",
+    "version": "2.4.0",
+    "keywords" : ["util"],
+    "repository": {
+        "url": "https://github.com/moment/moment",
+        "type": "git"
+    },
+    "homepage": "http://momentjs.com/",
+    "maintainers": ["杨茂 <yangmao@360.cn>"],
+    "description": "提供对时间进行：解析、验证、操作和格式化输出的函数库。",
+    "output": "moment.js"
+}

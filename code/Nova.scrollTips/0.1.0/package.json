@@ -1,0 +1,13 @@
+{
+    "name": "ScrollTips",
+    "version": "0.1.0",
+    "keywords" : ["nova"],
+    "repository": {
+        "url": "https://github.com/75team/novaUI",
+        "type": "git"
+    },
+    "homepage": "http://75team.github.io/novaUI/",
+    "maintainers": ["snadn <yangmao@360.cn>"],
+    "description": "监听滚动文档是否滚动到指点元素",
+    "output": "scrollTips.js"
+}

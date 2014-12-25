@@ -1,0 +1,8 @@
+{
+    "name": "Monitor",
+    "version": "最新版",
+    "keywords" : ["other"],
+    "homepage": "http://add.corp.qihoo.net/pages/viewpage.action?pageId=1674852",
+    "maintainers": ["ququ <quguangyu@360.cn>"],
+    "description": "360 通用统计 JS。"
+}

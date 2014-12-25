@@ -1,0 +1,13 @@
+{
+    "name": "KeyMaster",
+    "version": "1.1",
+    "keywords" : ["util"],
+    "repository": {
+        "url": "https://github.com/madrobby/keymaster",
+        "type": "git"
+    },
+    "maintainers": ["ququ <quguangyu@360.cn>"],
+    "description": "小巧、无依赖的浏览器键盘事件处理程序。",
+    "output": "keymaster.js"
+}
+

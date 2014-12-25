@@ -1,0 +1,8 @@
+{
+    "name": "Lunar",
+    "version": "1.0",
+    "keywords" : ["util"],
+    "maintainers": ["liuguanyu <liuguanyu@360.cn>"],
+    "description": "提供公历到中国农历的转换。",
+    "output": "lunar.js"
+}

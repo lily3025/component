@@ -1,0 +1,13 @@
+{
+    "name": "Swipable",
+    "version": "1.0.0",
+    "keywords" : ["nova"],
+    "repository": {
+        "url": "https://github.com/novawidgets/swipable",
+        "type": "git"
+    },
+    "homepage": "http://75team.github.io/novaUI/",
+    "maintainers": ["guagua <huangwei@360.cn>"],
+    "description": "滑动组件",
+    "output": "carousel.js"
+}

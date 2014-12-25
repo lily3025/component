@@ -1,0 +1,13 @@
+{
+    "name": "JC.common",
+    "version": "0.2",
+    "keywords" : ["jc"],
+    "repository": {
+        "url": "https://github.com/openjavascript/jquerycomps/blob/requirejs_master/modules/JC.common/0.2",
+        "type": "git"
+    },
+    "homepage": "http://jc2.openjavascript.org/docs_api/classes/JC.common.html",
+    "maintainers": ["qiushaowei <x@btbtd.org>"],
+    "description": "JC 组件依赖文件, 提供全局静态方法",
+    "output": "common.js"
+}

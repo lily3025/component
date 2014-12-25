@@ -1,0 +1,13 @@
+{
+    "name": "JC.Suggest",
+    "version": "0.1",
+    "keywords" : ["jc"],
+    "repository": {
+        "url": "https://github.com/openjavascript/jquerycomps/tree/requirejs_master/modules/JC.Suggest/0.1",
+        "type": "git"
+    },
+    "homepage": "http://jc2.openjavascript.org/docs_api/classes/JC.Suggest.html",
+    "maintainers": ["qiushaowei <x@btbtd.org>"],
+    "description": "输入提示组件",
+    "output": "Suggest.js"
+}

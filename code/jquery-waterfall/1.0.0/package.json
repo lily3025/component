@@ -1,0 +1,13 @@
+{
+    "name": "Waterfall",
+    "version": "1.0.0",
+    "keywords" : ["jqplugin"],
+    "repository": {
+        "url": "https://github.com/chenmnkken/ecope/tree/master/waterfall",
+        "type": "git"
+    },
+    "homepage": "https://github.com/chenmnkken/ecope/wiki/Waterfall-%E7%AD%89%E5%AE%BD%E7%80%91%E5%B8%83%E6%B5%81",
+    "maintainers": ["chenyiguo <chenyiguo@360.cn>"],
+    "description": "用于创建一个可以无限加载的等宽的图片瀑布流。",
+    "output": "waterfall.js"
+}

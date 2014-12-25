@@ -1,0 +1,8 @@
+{
+    "name": "VideoPlayer",
+    "version": "最新版",
+    "keywords" : ["other"],
+    "homepage": "http://add.corp.qihoo.net/pages/viewpage.action?pageId=8040472",
+    "maintainers": ["baipan <baipan@360.cn>"],
+    "description": "通用视频播放器"
+}

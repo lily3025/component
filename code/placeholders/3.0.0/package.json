@@ -1,0 +1,13 @@
+{
+    "name": "placeholders",
+    "version": "3.0.0",
+    "keywords" : ["util"],
+    "repository": {
+        "url": "https://github.com/jamesallardice/Placeholders.js",
+        "type": "git"
+    },
+    "homepage": "http://jamesallardice.github.io/Placeholders.js/",
+    "maintainers": ["安佳 <anjia@360.cn>"],
+    "description": "针对不支持html5的属性placeholder的兼容解决方案。",
+    "output" : "placeholders.js"
+}

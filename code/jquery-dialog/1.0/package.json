@@ -1,0 +1,8 @@
+{
+    "name": "JQ.Dialog",
+    "version": "1.0",
+    "keywords" : ["jqplugin"],
+    "maintainers": ["xinz <chenxin@360.cn>"],
+    "description": "浮层组件，可拖拽，带遮罩，支持深度定制。",
+    "output": "jq.dialog.js"
+}

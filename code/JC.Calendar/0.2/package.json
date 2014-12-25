@@ -1,0 +1,13 @@
+{
+    "name": "JC.Calendar",
+    "version": "0.2",
+    "keywords" : ["jc"],
+    "repository": {
+        "url": "https://github.com/openjavascript/jquerycomps/tree/requirejs_master/modules/JC.Calendar/0.2",
+        "type": "git"
+    },
+    "homepage": "http://jc2.openjavascript.org/docs_api/classes/JC.Calendar.html",
+    "maintainers": ["qiushaowei <x@btbtd.org>"],
+    "description": "日期选择组件",
+    "output": "Calendar.js"
+}

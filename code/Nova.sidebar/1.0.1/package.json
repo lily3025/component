@@ -1,0 +1,13 @@
+{
+    "name": "Sidebar",
+    "version": "1.0.1",
+    "keywords" : ["nova"],
+    "repository": {
+        "url": "https://github.com/novawidgets/sidebar",
+        "type": "git"
+    },
+    "homepage": "http://75team.github.io/novaUI/",
+    "maintainers": ["guagua <huangwei@360.cn>"],
+    "description": "侧边面板组件",
+    "output": "sidebar.js"
+}

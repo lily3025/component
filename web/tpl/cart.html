@@ -1,0 +1,15 @@
+{{? it.length}}
+    <div>已选择的组件：</div>
+    <ul>
+        {{~it:item:i}}
+        <li>
+            <a target="_blank" href="detail.html?name={{=item[0]}}&ver={{=item[1]}}&path={{=item[2]}}">{{=item[0]}}</a>
+            <span class="version">（{{=item[1]}}）</span>
+            <a class="remove-from-cart2" href="#" data-name="{{=item[0]}}" data-ver="{{=item[1]}}" data-path="{{=item[2]}}"><i class="icon-remove"></i> 移除</a>
+        </li>
+        {{~}}
+    </ul>
+    <div class="actions"><a class="download btn" href="#"><i class="icon-cloud-download"></i> 打包下载</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="empty btn btn-red"><i class="icon-trash"></i> 清空</a></div>
+{{??}}
+    <p>请选择要下载的组件。</p>
+{{?}}

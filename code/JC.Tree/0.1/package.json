@@ -1,0 +1,13 @@
+{
+    "name": "JC.Tree",
+    "version": "0.1",
+    "keywords" : ["jc"],
+    "repository": {
+        "url": "https://github.com/openjavascript/jquerycomps/tree/requirejs_master/modules/JC.Tree/0.1",
+        "type": "git"
+    },
+    "homepage": "http://jc2.openjavascript.org/docs_api/classes/JC.Tree.html",
+    "maintainers": ["qiushaowei <x@btbtd.org>"],
+    "description": "树菜单组件",
+    "output": "Tree.js"
+}

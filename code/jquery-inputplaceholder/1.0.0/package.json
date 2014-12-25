@@ -1,0 +1,13 @@
+{
+    "name": "Inputplaceholder",
+    "version": "1.0.0",
+    "keywords" : ["jqplugin"],
+    "repository": {
+        "url": "https://github.com/chenmnkken/ecope/tree/master/inputplaceholder",
+        "type": "git"
+    },
+    "homepage": "https://github.com/chenmnkken/ecope/wiki/InputPlaceholder-%E8%BE%93%E5%85%A5%E6%A1%86%E7%A9%BA%E7%99%BD%E5%8D%A0%E4%BD%8D%E6%96%87%E5%AD%97",
+    "maintainers": ["chenyiguo <chenyiguo@360.cn>"],
+    "description": "用于为输入框创建一个空白时的占位文字，模拟了 HTML5 的 placholder 的行为，兼容低版本浏览器。",
+    "output": "inputplaceholder.js"
+}

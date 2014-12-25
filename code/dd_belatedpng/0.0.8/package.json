@@ -1,0 +1,9 @@
+{
+    "name": "DD_belatedPNG",
+    "version": "0.0.8",
+    "keywords" : ["util"],
+    "homepage": "http://www.dillerdesign.com/experiment/DD_belatedPNG/",
+    "maintainers": ["ququ <quguangyu@360.cn>"],
+    "description": "解决 IE6 下 PNG 图片透明问题。",
+    "output": "DD_belatedPNG.js"
+}

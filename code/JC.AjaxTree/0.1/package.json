@@ -1,0 +1,13 @@
+{
+    "name": "JC.AjaxTree",
+    "version": "0.1",
+    "keywords" : ["jc"],
+    "repository": {
+        "url": "https://github.com/openjavascript/jquerycomps/tree/requirejs_master/modules/JC.AjaxTree/0.1",
+        "type": "git"
+    },
+    "homepage": "http://jc2.openjavascript.org/docs_api/classes/JC.AjaxTree.html",
+    "maintainers": [ "pjk<pjk@pjk.name>", "qiushaowei <x@btbtd.org>"],
+    "description": "AJAX树菜单组件",
+    "output": "AjaxTree.js"
+}

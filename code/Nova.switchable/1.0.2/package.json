@@ -1,0 +1,12 @@
+{
+    "name": "Switchable",
+    "version": "1.0.2",
+    "keywords": ["null"],
+    "repository": {
+        "url": "https://github.com/melonHuang/widgetcore",
+        "type": "git"
+    },
+    "maintainers": ["guagua <huangwei@360.cn>"],
+    "description": "切换组件基类",
+    "output": "switchable.js"
+}

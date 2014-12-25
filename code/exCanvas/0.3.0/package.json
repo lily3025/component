@@ -1,0 +1,13 @@
+{
+    "name": "exCanvas",
+    "version": "0.3.0",
+    "keywords" : ["util"],
+    "repository": {
+        "url": "https://code.google.com/p/explorercanvas/",
+        "type": "svn"
+    },
+    "homepage": "https://code.google.com/p/explorercanvas/",
+    "maintainers": ["wenbo <zhaowenbo@360.cn>"],
+    "description": "使用VML，让低版本的IE也能支持canvas接口。",
+    "output": "excanvas.js"
+}

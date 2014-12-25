@@ -1,0 +1,8 @@
+{
+    "name": "JQ.Easing",
+    "version": "1.0",
+    "keywords" : ["jqplugin"],
+    "maintainers": ["ququ <quguangyu@360.cn>"],
+    "description": "为 JavaScript 动画提供算子。",
+    "output": "easing.js"
+}

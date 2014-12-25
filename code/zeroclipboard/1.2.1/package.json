@@ -1,0 +1,13 @@
+{
+    "name": "ZeroClipboard",
+    "version": "1.2.1",
+    "keywords" : ["util"],
+    "repository": {
+        "url": "https://github.com/zeroclipboard/ZeroClipboard",
+        "type": "git"
+    },
+    "homepage": "http://zeroclipboard.org/",
+    "maintainers": ["柏盼 <baipan@360.cn>"],   
+    "description": "ZeroClipboard 依赖 Flash 实现跨浏览器复制内容到剪贴板。",
+    "output": "ZeroClipboard-modify.js"
+}

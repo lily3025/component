@@ -1,0 +1,13 @@
+{
+    "name": "Calendar",
+    "version": "1.0.0",
+    "keywords" : ["nova"],
+    "repository": {
+        "url": "https://github.com/75team/novaUI",
+        "type": "git"
+    },
+    "homepage": "http://75team.github.io/novaUI/",
+    "maintainers": ["snadn <yangmao@360.cn>"],
+    "description": "日历控件",
+    "output": "calendar.js"
+}

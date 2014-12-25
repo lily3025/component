@@ -1,0 +1,13 @@
+{
+    "name": "Suggest",
+    "version": "1.0.2",
+    "keywords" : ["nova"],
+    "repository": {
+        "url": "https://github.com/novawidgets/suggest",
+        "type": "git"
+    },
+    "homepage": "http://75team.github.io/novaUI/",
+    "maintainers": ["guagua <huangwei@360.cn>"],
+    "description": "搜索建议",
+    "output": "suggest.js"
+}

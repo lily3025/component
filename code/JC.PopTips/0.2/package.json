@@ -1,0 +1,13 @@
+{
+    "name": "JC.PopTips",
+    "version": "0.2",
+    "keywords" : ["jc"],
+    "repository": {
+        "url": "https://github.com/openjavascript/jquerycomps/tree/requirejs_master/modules/JC.PopTips/0.2",
+        "type": "git"
+    },
+    "homepage": "http://jc2.openjavascript.org/docs_api/classes/JC.PopTips.html",
+    "maintainers": [ "zuojing <zuojing1013@gmail.com>",  "qiushaowei <x@btbtd.org>" ],
+    "description": "带箭头的气泡提示框功能",
+    "output": "PopTips.js"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Highmaps.China",
+    "version": "0.0.1",
+    "keywords" : ["other"],
+    "homepage": "http://www.highcharts.com/",
+    "maintainers": ["Hex <zhaochang@360.cn>"],
+    "description": "基于 Highmaps(Highcharts) 的中国地图示例",
+    "output": "highmaps.china.js"
+}

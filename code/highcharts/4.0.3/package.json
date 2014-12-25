@@ -1,0 +1,13 @@
+{	
+	"name": "highcharts",
+	"version": "4.0.3", 
+    "keywords" : ["util"],
+	"repository": {
+		"url": "https://github.com/highslide-software/highcharts.com.git", 
+		"type": "git"
+	},
+	"homepage": "http://www.highcharts.com/", 
+	"maintainers": ["李文武 <liwenwu@360.cn>"],
+	"description": "基于SVG、VML的JavaScript图表库。",
+	"output": "highcharts.js"
+}

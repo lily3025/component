@@ -1,0 +1,13 @@
+{
+    "name": "Chart.js",
+    "version": "0.2.0",
+    "keywords" : ["util"],
+    "repository": {
+        "url": "https://github.com/nnnick/Chart.js",
+        "type": "git"
+    },
+    "homepage": "http://www.chartjs.org/",
+    "maintainers": ["wuliang <wuliang@360.cn>"],
+    "description": "提供轻量级canvas图表。",
+    "output": "chart.js"
+}

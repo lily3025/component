@@ -1,0 +1,13 @@
+{
+    "name": "QRCode",
+    "version": "1.0.0",
+    "keywords" : ["jqplugin"],
+    "repository": {
+        "url": "https://github.com/alphatr/qrcode",
+        "type": "git"
+    },
+    "homepage": "",
+    "maintainers": ["baipan <baipan@360.cn>"],
+    "description": "前端 JS 支持 Logo 的二维码生成库和解码库",
+    "output": "qrcode.js"
+}

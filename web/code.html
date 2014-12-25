@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>Qiwoo - JavaScript组件库</title>
+    <link rel="stylesheet" href="css/typo.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/highlightjs/solarized.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="http://s6.qhimg.com/static/0d263806316d6fa0/jquery,require,qw.core.js"></script>
+    <script>
+        require.config({'baseUrl' : location.href.replace(/^(.*\/)(?:\w*.html|#|\?).*$/, '$1')});
+    </script>
+    <style>
+		.aside {
+			width:270px;
+			position:fixed;
+			*position:absolute;
+			top:0;
+			left:0;
+			padding:10px;
+			word-wrap:break-word;
+		}
+		#list {
+			margin: 15px 0;
+		}
+		
+		#list li{
+			font-size:12px;
+			margin:5px 0;
+		}
+
+		a.current {
+			font-weight:bold;
+		}
+
+		#main {
+			background:#fff;
+			margin-left:290px;
+			min-height:500px;
+		}
+
+		#main .content {
+			padding:15px;
+		}
+
+		#main pre {
+			background:#fff;
+			border:none;
+			padding: 1em 0;
+		}
+    </style>
+</head>
+<body>
+	<div class="aside">
+		<h2><i class="icon-list"></i>&nbsp;本模块包含的文件：</h2>
+		<ul id="list">
+			<li>加载中...</li>
+		</ul>
+		<a id="back"><i class="icon-backward"></i>&nbsp;返回模块详情页</a>
+	</div>
+	<div id="main">
+		<div class="content"></div>
+	</div>
+	<script>
+	    require(['js/page/code']);
+	</script>
+</body>
+</html>

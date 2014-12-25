@@ -1,0 +1,13 @@
+{
+    "name": "underscore",
+    "version": "1.5.2",
+    "keywords" : ["util"],
+    "repository": {
+        "url": "http://github.com/jashkenas/underscore/",
+        "type": "git"
+    },
+    "homepage": "hhttp://underscorejs.org/",
+    "maintainers": ["孟之杰 <mengzhijie@360.cn>"],   
+    "description": "工具方法库，jQuery的黄金搭档。",
+    "output": "underscore.js"
+}

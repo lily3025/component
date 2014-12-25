@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>Qiwoo - JavaScript组件库</title>
+    <link rel="stylesheet" href="css/typo.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/highlightjs/solarized.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="http://s7.qhimg.com/static/0d263806316d6fa0/jquery,require,qw.core.js"></script>
+    <script>
+        require.config({'baseUrl' : location.href.replace(/^(.*\/)(?:\w*.html|#|\?).*$/, '$1')});
+    </script>
+</head>
+<body>
+    <!-- header start -->
+    <div class="navbar row"></div>
+    <!-- header end -->
+
+    <!-- content start -->
+    <div class="row content-wrap">
+        <!-- category start -->
+        <div class="side col-3">
+            <div class="download left-fixed">
+                <h1>组件下载</h1>
+                <p>已选择的组件如下，点击每个组件可查看其文档：</p>
+                <div id="module_list">
+                    <script type="text/tmpl" id="tplDoc">
+                        <ul class="doc-nav">
+                            {{~it:item:i}}
+                            <li>
+                                <a data-name="{{=item[0]}}" data-ver="{{=item[1]}}" data-path="{{=item[2]}}" href="#">
+                                    {{=item[0]}}（{{=item[1]}}）
+                                </a>
+                            </li>
+                            {{~}}
+                        </ul>
+                    </script>
+                </div>
+                <div><a href="#" id="btnDownload" class="btn"><i class="icon-download-alt"></i> 点击下载所选组件</a></div>
+                <p><input id="txtDownload" ></p>
+            </div>
+        </div>
+        <div class="main col-9">
+            <div class="doc-content typo" id="readme"></div>
+        </div>
+        <!-- category end -->
+    </div>
+    <!-- content end -->
+
+    <!-- footer start -->
+    <div id="ft">
+        &copy; Web平台部 <a href="http://qiwoo.org">奇舞团</a>
+    </div>
+    <!-- footer end -->
+
+<script>
+    require(['js/page/download']);
+</script>
+</body>
+</html>

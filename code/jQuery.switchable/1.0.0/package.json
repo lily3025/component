@@ -1,0 +1,13 @@
+{
+    "name": "jQuery.Switchable",
+    "version": "1.0.0",
+    "keywords" : ["jqplugin", "switch", "tab", "carousel", "slider"],
+    "repository": {
+        "url": "https://github.com/alphatr/switchable",
+        "type": "git"
+    },
+    "homepage": "https://github.com/alphatr/switchable",
+    "maintainers": ["Baipan <baipan@360.cn>"],
+    "description": "提供了 Tabs, Slide, Carousel 等功能的一个切换组件",
+    "output": "switchable.js"
+}

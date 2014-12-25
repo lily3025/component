@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Qiwoo - JavaScript组件库</title>
+    <link rel="stylesheet" href="css/typo.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/highlightjs/solarized.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="http://s6.qhimg.com/static/0d263806316d6fa0/jquery,require,qw.core.js"></script>
+    <script>
+        require.config({'baseUrl' : location.href.replace(/^(.*\/)(?:\w*.html|#|\?).*$/, '$1')});
+    </script>
+</head>
+<body>
+    <!-- header start -->
+    <div class="navbar row"></div>
+    <!-- header end -->
+
+    <!-- content start -->
+    <div class="row content-wrap">
+        <!-- category start -->
+        <div class="side col-3">
+            <div id="meta" class="meta left-fixed">
+                <script type="text/tmpl" id="tplMeta">
+                    <h1>{{=it.name}}</h1>
+                    {{var current_item = it.item;}}
+                    {{var info = current_item[3].data;}}
+                    <p>{{=current_item[2]}}</p>
+
+                    {{? info.maintainers && info.maintainers.length}}
+                    <div>维护：
+                        {{~info.maintainers:user:i}}
+                            {{ if(i){ }}&nbsp;{{ } }}
+                            {{=user.replace(/(^[^\s]*)\s?<(.*@.*)>/, '<a href="mailto:$2">$1</a>')}}
+                        {{~}}
+                    </div>
+                    {{?}}
+                    
+                    <div class="versions">版本：
+                        <ul>
+                        {{~it.versions:item:i}}
+                            <li>
+                                <a href="detail.html?name={{=it.name}}&path={{=item[1]}}&ver={{=item[0]}}">{{=item[0]}}</a>
+                                {{? i == it.ver}}<i title="当前版本" class="icon-ok"></i>{{?}}
+                            </li>
+                        {{~}}
+                        </ul>
+                    </div>
+
+                    <ul class="links">
+                        {{? info.homepage}}
+                        <li><a href="{{=info.homepage}}" target="_blank"><i class="icon-home"></i> 官网</a></li>
+                        {{?}}
+                        {{? info.repository && info.repository.url}}
+                        <li><a href="{{=info.repository.url}}" target="_blank"><i class="icon-github"></i> 源</a></li>
+                        {{?}}
+                        {{? current_item[3].data && current_item[3].data.output}}
+                        <li><a href="code.html?name={{=it.name}}&ver={{=current_item[0]}}&path={{=current_item[1]}}" target="_blank"><i class="icon-file-alt"></i> 码</a></li>
+                        {{?}}
+                    </ul>
+
+                    {{? it.group != 'other'}}
+                    <p>
+                        <a class="add-to-cart btn" href="#" data-name="{{=it.name}}" data-path="{{=current_item[1]}}" data-ver="{{=current_item[0]}}">
+                            <span class="icon-plus"> 我要用</span>
+                            <span class="icon-remove"> 不用了</span>
+                        </a>
+                    </p>
+                    {{?}}
+                    <div class="extra">
+                        {{var extra = it.extra;}}
+                        {{var params = 'name=' + it.name + '&path=' + current_item[1] +'&ver=' + current_item[0];}}
+                        <ul class="navigation">
+                            <li data-type="docs"><a href="?{{=params}}"><i class="icon-file"></i>文档</a></li>
+                            {{? extra.examples.length}}
+                                <li data-type="examples"><a href="?{{=params}}&type=examples&file={{=extra.examples[0].name}}"><i class="icon-gift"></i>演示</a></li>
+                            {{?}}
+                            {{? extra.tests.length}}
+                                <li><a target="_blank" href="test.html?{{=params}}&output={{=current_item[3].data.output}}&file={{=extra.tests.join(',')}}"><i class="icon-bug"></i>用例</a></li>
+                            {{?}}
+                        </ul>
+
+                        <ol class="sidelist docs" {{? it.current_type != 'docs'}}style="display:none;"{{?}}>
+                            {{? !it.current_file}}
+                                <li>使用说明 <i class="icon-ok"></i></li>
+                            {{??}}
+                                <li><a href="?{{=params}}">使用说明</a></li>
+                            {{?}}
+                            {{~extra.docs:doc:i}}
+                            {{? it.current_type == 'docs' && it.current_file == doc.name}}
+                                <li>{{=doc.title}} <i class="icon-ok"></i></li>
+                            {{??}}
+                                <li><a href="?{{=params}}&type=docs&file={{=doc.name}}">{{=doc.title}}</a></li>
+                            {{?}}
+                            {{~}}
+                        </ol>
+
+                        {{? extra.examples.length}}
+                            <ol class="sidelist examples" {{? it.current_type != 'examples'}}style="display:none;"{{?}}>
+                                {{~extra.examples:example:i}}
+                                {{? it.current_type == 'examples' && it.current_file == example.name}}
+                                    <li>{{=example.title}} <i class="icon-ok"></i></li>
+                                {{??}}
+                                    <li><a href="?{{=params}}&type=examples&file={{=example.name}}">{{=example.title}}</a></li>
+                                {{?}}
+                                {{~}}
+                            </ol>
+                        {{?}}
+                    </div>
+                </script>
+            </div>
+        </div>
+        <div class="main col-9">
+            <div class="doc-content typo" id="readme"></div>
+            <div class="ds-thread"></div>
+        </div>
+        <!-- category end -->
+    </div>
+    <!-- content end -->
+
+    <!-- footer start -->
+    <div id="ft">
+        &copy; Web平台部 <a href="http://qiwoo.org">奇舞团</a>
+    </div>
+    <!-- footer end -->
+    
+<script>
+    require(['js/page/detail']);
+</script>
+</body>
+</html>

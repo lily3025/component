@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Qiwoo - JavaScript组件库</title>
+    <link rel="stylesheet" href="css/typo.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/highlightjs/solarized.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="http://s7.qhimg.com/static/0d263806316d6fa0/jquery,require,qw.core.js"></script>
+    <script>
+        require.config({'baseUrl' : location.href.replace(/^(.*\/)(?:\w*.html|#|\?).*$/, '$1')});
+    </script>
+</head>
+<body>
+    <!-- header start -->
+    <div class="navbar row"></div>
+    <!-- header end -->
+
+    <!-- content start -->
+    <div class="row content-wrap">
+        <!-- category start -->
+        <div class="side col-3">
+            <ul class="category left-fixed" id="category">
+                <script type="text/tmpl">
+                {{~it.category :cate:index}}
+                    {{? it.data[cate.name] }}
+                        <li {{? !index}}class="active"{{?}}><a data-cate="_cate_{{=cate.name}}" href="#cate_{{=cate.name}}">{{=cate.title}}<span>({{=it.data[cate.name].length}})</span></a></li>
+                    {{?}}
+                {{~}}
+                </script>
+            </ul>
+        </div>
+        <div class="main col-9">
+            <div id="module_list" class="module-list">
+                <script type="text/tmpl">
+                {{~it.category :cate:index}}
+                    {{? it.data[cate.name] }}
+                        <h2 id="cate_{{=cate.name}}">{{=cate.title}}（{{=cate.name}}）</h2>
+                        <div class="modules">
+                            <ul>
+                                {{ for(var i = 0; i < it.data[cate.name].length; i++){ }}
+                                {{var item = it.data[cate.name][i];}}
+                                {{var current = item.versions[0];}}
+                                <li class="module-item">
+                                    <div class="title">
+                                        <h3><a target="_blank" href="detail.html?name={{=item.name}}">{{=item.name}}</a></h3>
+                                        <span class="version">{{=current[0]}}</span>
+                                        {{ if('other' !== cate.name) {/*硬编码，排除other*/  }}
+                                            <a class="add-to-cart cart-btn" href="#" data-name="{{=item.name}}" data-path="{{=current[1]}}" data-ver="{{=current[0]}}">
+                                                <span class="icon-plus"></span>
+                                                <span class="icon-remove"></span>
+                                            </a>
+                                        {{ } }}
+                                    </div>
+                                    <p>{{=current[2]}}</p>
+                                </li>
+                                {{ } }}
+                            </ul>
+                        </div>
+                    {{?}}
+                {{~}}
+                </script>
+            </div>
+            <div class="ds-thread"></div>
+        </div>
+        <!-- category end -->
+    </div>
+    <!-- content end -->
+
+    <!-- footer start -->
+    <div id="ft">
+        &copy; Web平台部 <a href="http://qiwoo.org">奇舞团</a>
+    </div>
+    <!-- footer end -->
+    <script>
+        require(['js/page/index']);
+    </script>
+</body>
+</html>

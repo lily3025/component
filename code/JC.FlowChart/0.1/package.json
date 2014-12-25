@@ -1,0 +1,13 @@
+{
+    "name": "JC.FlowChart",
+    "version": "0.1",
+    "keywords" : ["jc"],
+    "repository": {
+        "url": "https://github.com/openjavascript/jquerycomps/tree/requirejs_master/modules/JC.FlowChart/0.1",
+        "type": "git"
+    },
+    "homepage": "http://jc2.openjavascript.org/docs_api/classes/JC.FlowChart.html",
+    "maintainers": [ "qiushaowei <x@btbtd.org>"],
+    "description": "JC 流程图<br/>一对多关系, 多对一关系",
+    "output": "FlowChart.js"
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Twitter",
+    "version": "1.0.0",
+    "keywords" : ["util"],
+    "repository": {
+        "url": "https://github.com/akira-cn/twitter",
+        "type": "git"
+    },
+    "homepage": "https://github.com/akira-cn/twitter",
+    "maintainers": ["wuliang <wuliang@360.cn>"],
+    "description": "提供 Twitter 模式发送和接收消息。",
+    "output": "twitter.js"
+}

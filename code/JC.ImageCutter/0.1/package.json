@@ -1,0 +1,13 @@
+{
+    "name": "JC.ImageCutter",
+    "version": "0.1",
+    "keywords" : ["jc"],
+    "repository": {
+        "url": "https://github.com/openjavascript/jquerycomps/tree/requirejs_master/modules/JC.ImageCutter/0.1",
+        "type": "git"
+    },
+    "homepage": "http://jc2.openjavascript.org/docs_api/classes/JC.ImageCutter.html",
+    "maintainers": [ "qiushaowei <x@btbtd.org>"],
+    "description": "图片裁切",
+    "output": "ImageCutter.js"
+}

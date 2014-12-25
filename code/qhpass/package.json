@@ -1,0 +1,8 @@
+{
+    "name": "QUser",
+    "version": "v5.0.2",
+    "keywords" : ["other"],
+    "homepage": "http://jssdk.passport.corp.qihoo.net/doc/#index.md",
+    "maintainers": ["毛帅 <maoshuai@360.cn>"],
+    "description": "360用户中心通用登录JS SDK"
+}

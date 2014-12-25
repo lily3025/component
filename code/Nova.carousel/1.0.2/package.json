@@ -1,0 +1,13 @@
+{
+    "name": "Carousel",
+    "version": "1.0.2",
+    "keywords" : ["nova"],
+    "repository": {
+        "url": "https://github.com/novawidgets/switchable",
+        "type": "git"
+    },
+    "homepage": "http://75team.github.io/novaUI/",
+    "maintainers": ["guagua <huangwei@360.cn>"],
+    "description": "轮播组件",
+    "output": "carousel.js"
+}

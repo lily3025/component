@@ -1,0 +1,13 @@
+{
+    "name": "JQ.Color",
+    "version": "2.1.2",
+    "keywords": ["jqplugin"],
+    "repository": {
+        "url": "https://github.com/jquery/jquery-color",
+        "type": "git"
+    },
+    "homepage": "https://github.com/jquery/jquery-color",
+    "maintainers": ["ququ <quguangyu@360.cn>"],
+    "description": "提供了颜色动画及颜色处理函数的 jQuery 插件。",
+    "output": "jquery.color.js"
+}

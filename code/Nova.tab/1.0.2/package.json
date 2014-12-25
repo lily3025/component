@@ -1,0 +1,13 @@
+{
+    "name": "Tab",
+    "version": "1.0.2",
+    "keywords" : ["nova"],
+    "repository": {
+        "url": "https://github.com/novawidgets/switchable",
+        "type": "git"
+    },
+    "homepage": "http://75team.github.io/novaUI/",
+    "maintainers": ["guagua <huangwei@360.cn>"],
+    "description": "选项卡组件",
+    "output": "tab.js"
+}

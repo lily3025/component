@@ -1,0 +1,14 @@
+{
+    "name": "ScratchTicket",
+    "version": "1.0.0",
+    "keywords" : ["nova"],
+    "repository": {
+        "url": "https://github.com/novawidgets/scratchTicket",
+        "type": "git"
+    },
+    "homepage": "http://75team.github.io/novaUI/",
+    "maintainers": ["guagua <huangwei@360.cn>"],
+    "description": "刮刮乐组件",
+    "output": "scratchTicket.js"
+}
+

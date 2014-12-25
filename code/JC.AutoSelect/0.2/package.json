@@ -1,0 +1,13 @@
+{
+    "name": "JC.AutoSelect",
+    "version": "0.2",
+    "keywords" : ["jc"],
+    "repository": {
+        "url": "https://github.com/openjavascript/jquerycomps/tree/requirejs_master/modules/JC.AutoSelect/0.2",
+        "type": "git"
+    },
+    "homepage": "http://jc2.openjavascript.org/docs_api/classes/JC.AutoSelect.html",
+    "maintainers": ["qiushaowei <x@btbtd.org>"],
+    "description": "联动下拉框组件(无限级)",
+    "output": "AutoSelect.js"
+}

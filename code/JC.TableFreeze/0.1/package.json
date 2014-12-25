@@ -1,0 +1,13 @@
+{
+    "name": "JC.TableFreeze",
+    "version": "0.1",
+    "keywords" : ["jc"],
+    "repository": {
+        "url": "https://github.com/openjavascript/jquerycomps/tree/requirejs_master/modules/JC.TableFreeze/0.1",
+        "type": "git"
+    },
+    "homepage": "http://jc2.openjavascript.org/docs_api/classes/JC.TableFreeze.html",
+    "maintainers": ["zuojing <zuojing1013@gmail.com>"],
+    "description": "表格固定列",
+    "output": "TableFreeze.js"
+}

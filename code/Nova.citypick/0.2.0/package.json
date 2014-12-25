@@ -1,0 +1,13 @@
+{
+    "name": "citypick",
+    "version": "0.2.0",
+    "keywords" : ["nova"],
+    "repository": {
+        "url": "https://github.com/75team/novaUI",
+        "type": "git"
+    },
+    "homepage": "http://75team.github.io/novaUI/",
+    "maintainers": ["snadn <yangmao@360.cn>"],
+    "description": "城市选择控件",
+    "output": "citypick.js"
+}

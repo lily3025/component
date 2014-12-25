@@ -1,0 +1,14 @@
+{
+	"name": "JQ.lazyload",
+	"version": "1.9.3",
+	"keywords" : ["jqplugin"],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tuupola/jquery_lazyload/"
+	},
+	"author": "Mika Tuupola <tuupola@appelsiini.net>",
+	"homepage": "http://www.appelsiini.net/projects/lazyload",
+	"maintainers": ["李智杰 <lizhijie@360.cn>"],
+	"description": "图片懒加载的jQuery插件。",
+	"output": "jquery.lazyload.js"
+}
