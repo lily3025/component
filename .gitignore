@@ -1,0 +1,6 @@
+/web/tmp/*
+.DS_Store
+sftp-config.json
+build.sh
+stc/output
+stc/static/module

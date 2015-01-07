@@ -1,11 +1,11 @@
 define([
-    'js/lib/doT', 
-    'js/util/loadmodules', 
-    'js/util/showdoc', 
-    'js/util/global', 
+    'js/lib/doT',
+    'js/util/loadmodules',
+    'js/util/showdoc',
+    'js/util/global',
     'js/util/cart',
     'js/util/toc'
-], 
+],
 function(doT, loadModules, getDoc, global, cart, generateToc) {
     var urlQuery = location.search.queryUrl(),
         module_name = urlQuery.name,
@@ -23,7 +23,7 @@ function(doT, loadModules, getDoc, global, cart, generateToc) {
         ds.type = 'text/javascript';ds.async = true;
         ds.src = 'http://static.duoshuo.com/embed.js';
         ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] 
+        (document.getElementsByTagName('head')[0]
         || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
     /* * * DISQUS END * * */
@@ -57,7 +57,7 @@ function(doT, loadModules, getDoc, global, cart, generateToc) {
                         for(var j = 0; j < item.versions.length; j++) {
                             if(module_ver == item.versions[j][0]) {
                                 current_item = item;
-                                
+
                                 current_item.ver = j;
                                 current_item.item = item.versions[j];
 
@@ -139,14 +139,14 @@ function(doT, loadModules, getDoc, global, cart, generateToc) {
                         content = content.replace(/{{module}}/g, module);
                         content = content.replace(/{{src}}/g, src);
                         content = content.replace(/{{name}}/g, module_name.replace(/^\S*[\.\-]/, '').replace(/^[a-z]/, function(a) { return a.toUpperCase()}));
-                        
-                        content = content.replace(/<h3(.*<em>.*)<\/h3>/g, 
-                                '<h3 class="api-name"$1</h3>'); //HACK: h3包含em的，默认为API方法 
+
+                        content = content.replace(/<h3(.*<em>.*)<\/h3>/g,
+                                '<h3 class="api-name"$1</h3>'); //HACK: h3包含em的，默认为API方法
 
                         if(current_type == 'examples') {
                             content = '<p><a class="link-view-source" href="#"><i class="icon-external-link"></i> 查看源代码</a></p>' + content;
                         }
-                        
+
                         $('#readme').html(content || '文档还没有！');
 
                         generateToc($('#readme')[0]);
@@ -204,6 +204,7 @@ function(doT, loadModules, getDoc, global, cart, generateToc) {
             });
 
             $(window).resize();
+
         })(jQuery);
     });
 });

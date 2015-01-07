@@ -1,0 +1,13 @@
+{
+    "name": "MLE",
+    "version": "0.0.1",
+    "keywords" : ["HaoUI"],
+    "repository": {
+        "url": "https://github.com/nnnick/mul-lines-ellipsis.html",
+        "type": "git"
+    },
+    "homepage": "http://www.chartjs.org/",
+    "maintainers": ["wangwneming <wangwneming@360.cn>"],
+    "description": "多行省略。",
+    "output": "mul-lines-ellipsis.html"
+}

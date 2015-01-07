@@ -1,0 +1,13 @@
+{
+    "name": "Scrollbar",
+    "version": "0.0.1",
+    "keywords" : ["HaoUI"],
+    "repository": {
+        "url": "https://github.com/nnnick/mul-lines-ellipsis.html",
+        "type": "git"
+    },
+    "homepage": "http://www.chartjs.org/",
+    "maintainers": ["liulili <liulili-xy@360.cn>"],
+    "description": "自定义滚动条",
+    "output": "scrollbar.html"
+}

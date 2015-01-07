@@ -1,0 +1,13 @@
+{
+    "name": "SLE",
+    "version": "0.0.1",
+    "keywords" : ["HaoUI"],
+    "repository": {
+        "url": "https://github.com/nnnick/mul-lines-ellipsis.html",
+        "type": "git"
+    },
+    "homepage": "http://www.chartjs.org/",
+    "maintainers": ["wangwneming <wangwneming@360.cn>"],
+    "description": "简单单行省略和复杂单行省略。",
+    "output": "sle.html"
+}

@@ -6,6 +6,9 @@ define(function() {
                 'name' : 'base',
                 'title' : '基础模块'
             } , {
+                'name' : 'HaoUI',
+                'title' : 'HaoUI组件'
+            } , {
                 'name' : 'util',
                 'title' : '工具类模块'
             } , {
