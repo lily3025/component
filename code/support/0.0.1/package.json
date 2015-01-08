@@ -1,1 +1,9 @@
-package.json
+{
+    "name": "Support",
+    "version": "0.0.1",
+    "keywords" : ["util"],
+    "homepage": "https://code.google.com/p/swfupload/",
+    "maintainers": ["ququ <quguangyu@360.cn>"],
+    "description": "浏览器特性检查工具",
+    "output": "support.js"
+}
