@@ -40,7 +40,7 @@
                         <h2 id="cate_{{=cate.name}}">{{=cate.title}}（{{=cate.name}}）</h2>
                         <div class="modules">
                             <ul>
-                                {{console.log(it.data); for(var i = 0; i < it.data[cate.name].length; i++){ }}
+                                {{for(var i = 0; i < it.data[cate.name].length; i++){ }}
                                 {{var item = it.data[cate.name][i];}}
                                 {{var current = item.versions[0];}}
                                 <li class="module-item">

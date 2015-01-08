@@ -1,5 +1,5 @@
 {
-    "name": "Scrollbar",
+    "name": "FAP",
     "version": "0.0.1",
     "keywords" : ["HaoUI"],
     "repository": {
@@ -8,6 +8,6 @@
     },
     "homepage": "http://www.chartjs.org/",
     "maintainers": ["liulili <liulili-xy@360.cn>"],
-    "description": "自定义滚动条样式",
-    "output": "scrollbar.html"
+    "description": "视频自动播放",
+    "output": "flash-auto-play.html"
 }

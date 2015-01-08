@@ -534,9 +534,3 @@ code {
     -webkit-animation-direction: alternate;
     -webkit-animation-timing-function: ease-in-out;
 }
-#textarea {
-    display: none;
-    width: 90%;
-    min-height: 600px;
-    padding: 10px 20px;
-}
