@@ -8,6 +8,6 @@
     },
     "homepage": "http://www.chartjs.org/",
     "maintainers": ["liulili <liulili-xy@360.cn>"],
-    "description": "视频自动播放",
+    "description": "网页中嵌入视频，提供自动播放功能",
     "output": "flash-auto-play.html"
 }
