@@ -9,76 +9,97 @@
 
 ## 组件代码
 ```js
-function embedFlash(obj) {
-   var origin, html,
-       url = obj.url,
-       height = obj.height ? obj.height : '400',
-       width = obj.width ? obj.width : '480',
-       allowFullScreen = obj.allowFullScreen ? obj.allowFullScreen : 'true',
-       isQiyi;
-       if (obj.autoPlay) {
-          origin = obj.url.match(/(tudou|youku|letv|yinyuetai|qq|ku6|sohu|qiyi)/g).join('');
-          switch(origin) {
+function EmbedFlash(obj) {
+    this.id = obj.id;
+    this.url = obj.url;
+    this.height = obj.height ? obj.height : '400';
+    this.width = obj.width ? obj.width : '480';
+    this.allowFullScreen = obj.allowFullScreen ? obj.allowFullScreen : 'true';
+    this.origin = '';
+    this.isQiyi = false;
+    this.autoPlay = obj.autoPlay;
+    this.init();
+}
+
+EmbedFlash.prototype = {
+    init: function() {
+       var html, obj,
+           reg = /(tudou|youku|letv|yinyuetai|qq|ku6|sohu|qiyi)/g;
+       if (this.autoPlay) {
+          this.origin = this.url.match(reg).join('');
+          switch(this.origin) {
             case 'youku':
-              var obj = obj.url.split('/');
-              url = obj.url + '?VideoIDS=' + obj[obj.length-2] + '&isAutoPlay=true';
+              obj = this.url.split('/');
+              this.url = this.url + '?VideoIDS=' +
+                         obj[obj.length-2] + '&isAutoPlay=true';
               break;
             case 'tudou':
-              url = obj.url.split('/v.swf')[0] + '&autoPlay=true/v.swf';
+              this.url = this.url.split('/v.swf')[0] + '&autoPlay=true/v.swf';
               break;
             case 'letv':
-              if (/autoplay=0/g.test(obj.url)) {
-                url = obj.url.replace('autoplay=0', 'autoplay=1');
+              if (/autoplay=0/g.test(this.url)) {
+                this.url = this.url.replace('autoplay=0', 'autoplay=1');
               } else {
-                url = obj.url + '&autoplay=1';
+                this.url = this.url + '&autoplay=1';
               }
               break;
             case 'qq':
-              if (/auto=0/g.test(obj.url)) {
-                url = obj.url.replace('auto=0', 'auto=1');
-              } else if (/auto=1/g.test(obj.url)) {
-                url = obj.url;
+              if (/auto=0/g.test(this.url)) {
+                this.url =this.url.replace('auto=0', 'auto=1');
+              } else if (/auto=1/g.test(this.url)) {
+                this.url = this.url;
               } else {
-                url = obj.url + '&autoplay=1';
+                this.url = this.url + '&autoplay=1';
               }
               break;
             case 'ku6':
-              url = obj.url + '&auto=1';
+              this.url = this.url + '&auto=1';
               break;
             case 'sohu':
-              if (/autoplay=false/g.test(obj.url)) {
-                url = obj.url.replace('autoplay=false', 'autoplay=true');
+              if (/autoplay=false/g.test(this.url)) {
+                this.url = this.url.replace('autoplay=false', 'autoplay=true');
               } else {
-                url = obj.url + '&autoplay=true';
+                this.url = this.url + '&autoplay=true';
               }
               break;
             case 'yinyuetai':
-              url = obj.url.split('v_0.swf')[0] + 'a_0.swf';
+              this.url = this.url.split('v_0.swf')[0] + 'a_0.swf';
               break;
             case 'qiyi':
-              url = obj.url;
-              isQiyi = true;
+              this.url = this.url;
+              this.isQiyi = true;
               break;
             default:
-              url = obj.url;
+              this.url = this.url;
          }
-       }
+      }
 
-      return '<embed src="'+ url +'" quality="high" width="' + width + '" height="' + height + '" align="middle" allowScriptAccess="always" allowFullScreen="' + allowFullScreen + '" mode="transparent"'+ (isQiyi ? 'flashvars="isAutoPlay=true"' : '') +' type="application/x-shockwave-flash"></embed>';
-}
+      html = '<embed src="'+ this.url +'" quality="high" width="' + this.width +
+             '" height="' + this.height +
+             '" align="middle" allowScriptAccess="always" allowFullScreen="' +
+             this.allowFullScreen + '" mode="transparent"'+
+             (this.isQiyi ? 'flashvars="isAutoPlay=true"' : '') +
+             ' type="application/x-shockwave-flash"></embed>';
+      document.getElementById(this.id).innerHTML = html;
+    }
+};
 
 ```
 ## 参数说明
-1. 传入一个对象，对象包含的参数：url（必选），autoPlay（可选），width（可选），height（可选），allowFullScreen（可选）
-2. url为可播放的flash地址
-3. autoPlay为可自动播放的开关，默认是关
-4. width为视频显示的宽度，默认是400px
-5. height为视频显示的高度，默认是400px
-6. allowFullScreen是否允许全屏，默认是允许
+1. 传入一个对象，对象包含的参数：id(必选)，url（必选），autoPlay（可选），width（可选），height（可选），allowFullScreen（可选）
+2. id要显示的视频位置元素id
+3. url为可播放的flash地址
+4. autoPlay为可自动播放的开关，默认是关
+5. width为视频显示的宽度，默认是400px
+6. height为视频显示的高度，默认是400px
+7. allowFullScreen是否允许全屏，默认是允许
 
 ## 使用示例
-1. embedFlash({url: 'http://www.yinyuetai.com/video/player/295869/v_0.swf', autoPlay: true});
-2. 返回可嵌入flash的html代码
+new EmbedFlash({
+    id: 'video',
+    url: 'http://player.youku.com/player.php/Type/Folder/Fid/23321797/Ob/1/sid/XODY2ODkyODQ0/v.swf',
+    autoPlay: true
+});
 
 ## 代码详解
 1. 支持优酷、土豆、乐视、爱奇艺、腾讯、酷6、搜狐、音悦台八大主流视频网站的视频自动播放功能；
