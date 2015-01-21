@@ -1,0 +1,13 @@
+{
+    "name": "goTop",
+    "version": "0.0.1",
+    "keywords" : ["HaoUI"],
+    "repository": {
+        "url": "https://github.com/nnnick/go-top.html",
+        "type": "git"
+    },
+    "homepage": "http://www.chartjs.org/",
+    "maintainers": ["liulili <liulili-xy@360.cn>"],
+    "description": "点击回到顶部",
+    "output": "go-top.html"
+}

@@ -1,0 +1,13 @@
+{
+    "name": "CTG",
+    "version": "0.0.1",
+    "keywords" : ["HaoUI"],
+    "repository": {
+        "url": "https://github.com/nnnick/css-triangle-generator.html",
+        "type": "git"
+    },
+    "homepage": "http://www.chartjs.org/",
+    "maintainers": ["liulili <liulili-xy@360.cn>"],
+    "description": "css三角形生成器",
+    "output": "css-triangle-generator.html"
+}
